@@ -5,7 +5,10 @@
        ---*/   
       
        UltraEdit SAS DMS Editor for SAS Compatible Systems 
-      
+       
+       Too long to post, see
+       https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
+       
        UltraEdit Version 2025.1.0.31 64-bit   (ribbon GUI)
       
        Markdown file
