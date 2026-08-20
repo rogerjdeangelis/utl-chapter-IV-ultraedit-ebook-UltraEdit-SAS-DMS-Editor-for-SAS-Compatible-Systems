@@ -28,9 +28,13 @@
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems   
        
        Here is the final Cheat Sheet
-        
-          Ehanced Key Mapping  
-           
+       
+           Window Functions
+               1  Ctrl+C Copy, Ctrl+V Paste, Ctrl+X Cut, Ctrl+Z Undo, Ctrl+Y redo
+               2  Shift Mouse Wheel Shifts Text left and right    
+     
+           Ehanced Key Mapping  
+
                 0  Ctrl+Alt-T       Tile 3 windows lst, sas, log. You can customize further ie docked find, UltraEdit will remember,
                 1  Ctrl+Alt+X       Run Highlighted Code 
                 2  Ctrl+Alt+J       Run entire program with Jenner Aalytics
