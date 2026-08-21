@@ -9,6 +9,9 @@
        Too long to post, see
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
        
+       THERE MAY BE AN ULTRAEDIT ISSUE WITH CARDS/DATALINES WHEN EXECUTING HIGHLIGHTED TEXT !!
+       WORKS OK IN CLI
+       
        Markdown file
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
        
