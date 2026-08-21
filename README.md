@@ -10,7 +10,10 @@
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
        
        UltraEdit Version 2025.1.0.31 64-bit   (ribbon GUI)
-      
+
+       THERE MAY BE AN ULTRAEDIT ISSUE WITH CARDS/DATALINES WHEN EXECUTING HIGHLIGHTED TEXT !!
+       WORKS OK IN CLI
+       
        Markdown file
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
        
