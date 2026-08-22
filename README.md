@@ -13,6 +13,9 @@
 
        THERE MAY BE AN ULTRAEDIT ISSUE WITH CARDS/DATALINES WHEN EXECUTING HIGHLIGHTED TEXT !!
        WORKS OK IN CLI
+
+       When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
+       If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
        
        Markdown file
        https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
