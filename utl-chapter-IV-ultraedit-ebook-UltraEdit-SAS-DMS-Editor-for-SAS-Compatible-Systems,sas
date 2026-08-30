@@ -14,7 +14,8 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
  
  When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
  If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
- When using truple keys do not press all three at once hit Ctrl+Alt (very slight hesitation) then J.
+ Also, a save will not be done if the code did not change; this is also true for 'promote to production)
+ When using triple keys, do not press all three at once; hit Ctrl+Alt (I use a very slight hesitation, then J).
  
  Markdown file
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
@@ -22,23 +23,24 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
  PDF  
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.pdf
              
- Workflow four repositories
+ Workflow repositories
              
  https://github.com/rogerjdeangelis/utl-chapter-I-configuration-and-ultraedit-setup-for-sas-compatible-systems
  https://github.com/rogerjdeangelis/utl-chapter-II-ultraedit-key-mapping-for-sas-compatible-systems
  https://github.com/rogerjdeangelis/utl-chapter-III-ultraedit-macros-javascript-for-sas-compatible-systems
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems   
+ https://github.com/rogerjdeangelis/jnr-alpha-version-jenner-analytics-windows-binary-calling-python-using-ultraedit-proof-of-concept
+ https://github.com/rogerjdeangelis/jnr-alpha-version-jenner-analytics-windows-binary-calling-R-using-ultraedit-proof-of-concept
  
- If you want all the settings used in the github repositories download and ibstall the settings.
+ If you want all the settings used in the github repositories, download and ibstall the settings.
  Advanced > Backup Settings > Restore   
- 
- https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems   
+    
  
  Here is the final Cheat Sheet
  
      Window Functions
          1  Ctrl+C Copy, Ctrl+V Paste, Ctrl+X Cut, Ctrl+Z Undo, Ctrl+Y redo
-         2  Shift Mouse Wheel Shifts Text left and right     
+         2  Shift+ Mouse Wheel Shifts Text left and right     
 
 
  Remember UE should look like this and match your CLI
@@ -49,69 +51,86 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
  /* ..                        |                           |                        */
  /**********************************************************************************/
 
+FYI: If an empty 'command output' window pops up whith 'user tools', 
+go to advanced>user tools> select a tool and open 'output' tab and turn off 'capture output'.
+This works because I have defined destinations for log and lst.
+
 Note: Advanced>user toold>Configure    
       The order of the tools have builtin Mappings
       1st Tool Is mapped to Ctrl+shift+1
-      2nd Tool Is mapped to Ctrl+shift+2
-	  ...
+      2nd Tool Is mapped to Ctrl+shift+2	
+
+My lack of understanding has led to some issues with the 1:1 relation between user tool position 
+in the list of tool and Ctrl+shift+#, so I swtched to Ctrl+Alt+#.	
+
+I have found that [col]/onoff in thr bottom line is crucial. I turn it off(o blue border) when
+saving program copying and pasting whole lines. [COL] to block copies, alt drag a block
+of code then past ay cursor.
 
  Enhanced Key Mappings ( I have reserved Ctrl+Alt+ for user key mappings )
  
   1  Ctrl+Alt-T       Tile 3 windows lst, sas, log. You can customize further ie docked find                       
-  2  Ctrl+Shift+1     Jenner Run entire program with Jenner Aalytics   
-  3  Ctrl+Shift+2     Jenner Run Highlighted Code 
-  4  Ctrl+Shift+3     WPS Run Entire Program  
-  4  Ctrl+Shift+4     WPS Run Highlighted code
-  4  Ctrl+Alt-2       Save Program using line 2 of program  
-  5  Ctrl+Alt+L       Clear Log and Lst	
-  6  Ctrl+A Space     Clear any window            
-  7  Ctrl+S           Save ( chapter II shows how to add versioning)              
-  8  F12              save as            
-  9  Cltrl+F          Docked small persistent find box (very usefull)              
- 10  Alt+F3           Find (note if you have selected text, only that text will be seaarched)            
- 11  Ctrl+R           find/replace (note if you have selected text, only that text will be seaarched)            
- 12  Ctrl+G           Go to line                    
- 13  Ctrl+F5          Convert selected text to lowercase            
- 14  Alt+F5           Convert selected text to uppercase            
- 15  Ctrl+Shift+D     Duplcate line            
- 16  Ctrl+E           Delete Line            
- 17  Ctrl+Alt+E       Mutiple consecutive spaces to one space            
- 18  Ctrl+B           Select matching [()] - plase cursor before bracket and ctrl+b             
- 19  F3               Search Forward(easier than repeated clicls on NEXT in find replace)            
- 20  Ctrl+F3          Search backward            
- 21  Ctrl+Home        Cursor at the top of editor (not the top of the visible window)            
- 22  Ctrl+End         Cursor to the bottom of the editor                
- 23  ctrl+Shift+End   Delete All lines to end of file in editor                   
- 24  Ctrl+H           Toggle Hex Mode               
- 25  Ctrl+\           trim leading spaces works on selected lines or entire text            
- 26  Ctrl+N           Open an additional editor window            
- 27  Ctrl+K           Spell Check             
- 28  Ctrl+shift+F     Find in files            
- 29  F7               Insert datetime at cursor            
- 20  F5               Capitalize the first letter of each word            
- 30  Alt+\            Counts all the words in the entire program                   
- 31  Ctrl+Q           Quick File Open                  
- 32  Ctrl+O           Open a File            
- 33  Ctrl Shift F4    Close all Files Open                                                                     
- 34  Alt+F12          Save All Open Files                   
- 35  Ctrl+Shift+P     Command Pallete (had to do it twice)            
- 36  F1               Help                   
- 37  F9               Run Dos Command            
- 38  F10              Run Windows Program                                                                                  
- 39  CTRL+F11         Trim Leading Spaces            
- 40  Ctrl+p           Print            
- 41  Ctrl+M           Play Macro             
- 42  Alt+F11          Compare files            
- 43  Ctrl+J           Flow lines (sas TF in prefix area, highlight lines ctrl-J)            
- 44  box              Create command box using autocomplete               
- 45  Ctrl+Alt+L       Clear log and list (may have a line of residual text?)               
- 46  Tab              Tab 4 spaces see below         
- 47  Ctrl+Alt+C       Center Justify see below         
- 48  Ctrl+Alt+L       Left Justify see below            
- 49  Ctrl+Alt+I       Renter Justify see below            
- 50  Ctrl+Alt+8       Comment out a block of existing code 
- 51  Ctrl+A then Tab  Shift entire program 4 spaces   
-            
+  2  Ctrl+Shift+1     Jenner Run entire program with Jenner Aalytics (user tool Jnr -no script needed )  
+  3  Ctrl+Shift+2     Jenner Run Highlighted Code run_selection.js (I use ctrl+Alt+R)
+  4  Ctrl+Shift+3     WPS Run Entire Program (no script needed - user tool slc) 
+  5  Ctrl+Shift+4     WPS Run Highlighted code (run_selectioslc.js - I use Alt+Ctrl+4)
+  6  Ctrl+Alt+2       Save Program using line 2 of program (do not need user tools - advanced all scripts see below) 
+  7  Ctrl+Alt+L       Clear Log and Lst	((do not need user tools - advanced all scripts see below) 
+  8  Ctrl+Alt+P       Python Run (run_selectionpy.js)
+  9  Ctrl+Alt+N       R Run (run_selectionr.js)
+ 10  Ctrl+A Space     Clear any window            
+ 11  Ctrl+S           Save ( chapter II shows how to add versioning)              
+ 12  F12              save as            
+ 13  Cltrl+F          Docked small persistent find box (very usefull)              
+ 14  Alt+F3           Find (note if you have selected text, only that text will be seaarched)            
+ 15  Ctrl+R           find/replace (note if you have selected text, only that text will be seaarched)            
+ 16  Ctrl+G           Go to line                    
+ 17  Ctrl+F5          Convert selected text to lowercase            
+ 18  Alt+F5           Convert selected text to uppercase            
+ 19  Ctrl+Shift+D     Duplcate line            
+ 20  Ctrl+E           Delete Line            
+ 21  Ctrl+Alt+E       Mutiple consecutive spaces to one space            
+ 22  Ctrl+B           Select matching [()] - plase cursor before bracket and ctrl+b             
+ 23  F3               Search Forward(easier than repeated clicls on NEXT in find replace)            
+ 24  Ctrl+F3          Search backward            
+ 25  Ctrl+Home        Cursor at the top of editor (not the top of the visible window)            
+ 26  Ctrl+End         Cursor to the bottom of the editor                
+ 27  ctrl+Shift+End   Delete All lines to end of file in editor                   
+ 28  Ctrl+H           Toggle Hex Mode               
+ 29  Ctrl+\           trim leading spaces works on selected lines or entire text            
+ 30  Ctrl+N           Open an additional editor window            
+ 31  Ctrl+K           Spell Check             
+ 32  Ctrl+shift+F     Find in files            
+ 33  F7               Insert datetime at cursor            
+ 34  F5               Capitalize the first letter of each word            
+ 35  Alt+\            Counts all the words in the entire program                   
+ 36  Ctrl+Q           Quick File Open                  
+ 37  Ctrl+O           Open a File            
+ 38  Ctrl Shift F4    Close all Files Open                                                                     
+ 39  Alt+F12          Save All Open Files                   
+ 40  Ctrl+Shift+P     Command Pallete (had to do it twice)            
+ 41  F1               Help                   
+ 42  F9               Run Dos Command            
+ 43  F10              Run Windows Program                                                                                  
+ 44  CTRL+F11         Trim Leading Spaces            
+ 45  Ctrl+p           Print            
+ 46  Ctrl+M           Play Macro             
+ 47  Alt+F11          Compare files            
+ 48  Ctrl+J           Flow lines (sas TF in prefix area, highlight lines ctrl-J)            
+ 49  box              Create command box using autocomplete               
+ 50  Ctrl+Alt+L       Clear log and list (may have a line of residual text?)               
+ 51  Tab              Tab 4 spaces see below         
+ 52  Ctrl+Alt+C       Center Justify see below         
+ 53  Ctrl+Alt+L       Left Justify see below            
+ 54  Ctrl+Alt+I       Renter Justify see below            
+ 55  Ctrl+Alt+8       Comment out a block of existing code 
+ 56  Ctrl+A then Tab  Shift entire program 4 spaces   
+ 57  View>Ruler       Ruler at top of editor
+ 58  Click [COL]      [COL] is the very bootom line in UE
+ 59  Trim Trailing    advanced>settings>filehandling> checj Trim trailing spaces on save
+ 60  Ctr+Alt+B        Toggle [COL] on/off the bottom line of UE
+  
+ 
  Macros             
   1  Ctrl+Alt+E       Reduce mutiple blanks to single blank udes perl expressions.             
                       Works on mutiple lines with shiftAlt +column mode 
@@ -167,7 +186,7 @@ Note: Advanced>user toold>Configure
 					 then click on OK make, thats it, however  sure
 					 autocomplete is on. see 1 in templates above
 					 
-   3 Javascrpting      see Chapter III
+  3 Javascrpting      also see Chapter III
 					 
   User Tools (execute your program in any application that has an CLI)	
   
@@ -184,9 +203,9 @@ Note: Advanced>user toold>Configure
 		
    Miscellaneous  
    
-   0   Create a macro that inserts four lines  
-     Advanced > go to macro sextion and click on yhr small triange next to configue
-	 select on create macro
+   0 Create a macro that inserts four lines  
+     Advanced > go to macro section and click on the small triange next to configue
+	 select on create macro insert rour lines
 	 
               
    1.  Autosave all open files every minute            
@@ -285,3 +304,9 @@ Note: Advanced>user toold>Configure
            proc print data=sashelp.zipcode(obs=3);
            Run;   
               */
+    6.   SAS highlighting (you should have downloade sas.uew or used the github version)	
+          file directory: C:\Program Files\IDM Computer Solutions\UltraEdit\wordfiles	
+		  Advanced>settings>edotor display>
+          enable highlighting		 
+          installed wordfiles: SAS 9 Modified
+        		  
