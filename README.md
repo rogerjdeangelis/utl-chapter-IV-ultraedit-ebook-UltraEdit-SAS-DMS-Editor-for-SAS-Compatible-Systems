@@ -16,6 +16,9 @@
 	 If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
 	 Also a save will not be done if the code did not change, this is also tru for 'promote to production)
 	 When using trile keys do not press all three at once hit Ctrl+Alt (I use a very slight hesitation then J).
+
+	 Changes to the CLI
+	 jenner  "c:/jnr/runsas_selection.sas" --sasautos "c:/otojnr" --autoexec="c:/otojnr/autoexec.sas" -log "c:/jnr/current1.log" -print "c:/jnr/current1.lst" --work "d:/wpswrk" -rsasuser
 	 
 	 Markdown file
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
