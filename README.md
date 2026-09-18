@@ -9,17 +9,24 @@
 	 Too long to post, see
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
 	 
-	 THERE MAY BE AN ULTRAEDIT ISSUE WITH CARDS/DATALINES WHEN EXECUTING HIGHLIGHTED TEXT !!
-	 WORKS OK IN CLI
-	 
 	 When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
 	 If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
-	 Also a save will not be done if the code did not change, this is also tru for 'promote to production)
-	 When using trile keys do not press all three at once hit Ctrl+Alt (I use a very slight hesitation then J).
-
-	 Changes to the CLI
-	 jenner  "c:/jnr/runsas_selection.sas" --sasautos "c:/otojnr" --autoexec="c:/otojnr/autoexec.sas" -log "c:/jnr/current1.log" -print "c:/jnr/current1.lst" --work "d:/wpswrk" -rsasuser
+	 Also a save will not be done if the code did not change, this is also true for 'promote to production')
+	 When using triple keys do not press all three at once hit Ctrl+Alt (I use a very slight hesitation then J).
 	 
+     Run entire editor program Jenner Analytics
+	cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos    "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+	
+	 Run hilighted text Jenner Analytics
+	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+
+
+	 Run entire editor program slc
+	cmd /c start /B wps c:/slc/current.sas -sasauto "c:/wpsoto" -log "c:/slc/current.log" -print "c:/slc/current.lst" -work "d:/wpswrk" -sasuser c:\etc -autoexec c:/wpsoto/autoexec.sas > c:\slc\console_output.txt 2>&1
+	
+     Run hilighted text slc
+	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & wps -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+	
 	 Markdown file
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
 	 
