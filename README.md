@@ -32,7 +32,36 @@
 	 
 	 PDF  
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.pdf
-				 
+	 
+   Temporary fix to add program source statements, sysin, to the log
+
+   /--- Add this to the end ofyour autoexec. For now it only works with run_selection java script.    ---*/
+   /*---c:/jnr/runsas_selection.sas is hardcoded. This is sysyin. getoption(sysin) is being worked on ---*/
+
+   options nosource;
+   data _null_;
+     infile "c:/jnr/runsas_selection.sas";
+     input;
+     rec=put(_n_,5. -r);
+     putlog rec _infile_;
+   run;
+   options source;
+
+
+   Note My Untraedit CLI in User tools is
+
+   Note -initstmt "%echolog;" does not work when shelling out from ultraedit, bit does
+   wotk from the dos command window?
+
+   cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" &
+   jenner -sysin "C:\jnr\runsas_selection.sas"
+   -print "C:\jnr\current1.lst"
+   -log "C:\jnr\current1.log"
+   -sasautos "C:\otojnr"
+   -autoexec "C:\otojnr\autoexec.sas"
+   -sasuser "C:\etc"
+   -work "D:\wpswrk"
+   -initstmt "%echolog;" > c:\slc\console_output.txt 2>&1			 
 	 Workflow four repositories
 				 
 	 https://github.com/rogerjdeangelis/utl-chapter-I-configuration-and-ultraedit-setup-for-sas-compatible-systems
