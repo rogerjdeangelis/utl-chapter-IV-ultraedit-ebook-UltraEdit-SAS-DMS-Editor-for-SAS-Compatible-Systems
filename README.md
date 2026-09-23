@@ -61,7 +61,9 @@
    -autoexec "C:\otojnr\autoexec.sas"
    -sasuser "C:\etc"
    -work "D:\wpswrk"
-   -initstmt "%echolog;" > c:\slc\console_output.txt 2>&1			 
+   -initstmt "%echolog;" > c:\slc\console_output.txt 2>&1	
+
+   
 	 Workflow four repositories
 				 
 	 https://github.com/rogerjdeangelis/utl-chapter-I-configuration-and-ultraedit-setup-for-sas-compatible-systems
