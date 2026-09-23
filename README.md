@@ -1,6 +1,6 @@
- 	 /*--- promote to production
-	 c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems.sas 
-	 ---*/   
+ 	/*--- promote to production
+	c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems.sas 
+	---*/   
 	 
 	 UltraEdit SAS DMS Editor for SAS Compatible Systems 
 	 
@@ -8,63 +8,69 @@
 	 
 	 Too long to post, see
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
+
+	 Run entire editor program Jenner Analytics
+	cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+	Run hilighted text Jenner Analytics
+	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+
+	Run entire editor program slc
+	cmd /c start /B wps c:/slc/current.sas -sasauto "c:/wpsoto" -log "c:/slc/current.log" -print "c:/slc/current.lst" -work "d:/wpswrk" -sasuser c:\etc -autoexec c:/wpsoto/autoexec.sas > c:\slc\console_output.txt 2>&1
+	Run hilighted text slc
+	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & wps -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+
 	 
 	 When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
 	 If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
-	 Also a save will not be done if the code did not change, this is also true for 'promote to production')
-	 When using triple keys do not press all three at once hit Ctrl+Alt (I use a very slight hesitation then J).
-	 
-     Run entire editor program Jenner Analytics
-	cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos    "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
-	
-	 Run hilighted text Jenner Analytics
-	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+	 Also, a save will not be done if the code did not change; this is also true for 'promote to production)
+	 When using triple keys, do not press all three at once; hit Ctrl+Alt (I use a very slight hesitation, then J).
 
+	 In 'Jenner v1.5.66 (build v1.5.66+32248522a7.20260831T065030Z.x86_64-pc-windows-msvc)' there is a slight change in the CLI.
 
-	 Run entire editor program slc
-	cmd /c start /B wps c:/slc/current.sas -sasauto "c:/wpsoto" -log "c:/slc/current.log" -print "c:/slc/current.lst" -work "d:/wpswrk" -sasuser c:\etc -autoexec c:/wpsoto/autoexec.sas > c:\slc\console_output.txt 2>&1
-	
-     Run hilighted text slc
-	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & wps -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
-	
+		 --autoexec="c:/otojnr/autoexec.sas" (-- and = instead of just -)
+		 --work "d:/wpswrk" (--)
+		 
+		 CLI
+		 jenner  "c:/jnr/runsas_selection.sas" --sasautos "c:/otojnr" --autoexec="c:/otojnr/autoexec.sas" -log "c:/jnr/current1.log" -print "c:/jnr/current1.lst" --work "d:/wpswrk" -rsasuser	 
+
 	 Markdown file
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.md               
 	 
 	 PDF  
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems/blob/main/an-ultraedit-sas-dms-editor_3.pdf
-	 
-   Temporary fix to add program source statements, sysin, to the log
 
-   /--- Add this to the end ofyour autoexec. For now it only works with run_selection java script.    ---*/
-   /*---c:/jnr/runsas_selection.sas is hardcoded. This is sysyin. getoption(sysin) is being worked on ---*/
+	Temporary fix to add program source statements, sysin, to the log
+	------------------------------------------------------------------
 
-   options nosource;
-   data _null_;
-     infile "c:/jnr/runsas_selection.sas";
-     input;
-     rec=put(_n_,5. -r);
-     putlog rec _infile_;
-   run;
-   options source;
+	/--- Add this to the end ofyour autoexec. For now it only works with run_selection java script.    ---*/
+	/*---c:/jnr/runsas_selection.sas is hardcoded. This is sysyin. getoption(sysin) is being worked on ---*/
+
+	options nosource;
+	data _null_;
+	  infile "c:/jnr/runsas_selection.sas";
+	  input;
+	  rec=put(_n_,5. -r);
+	  putlog rec _infile_;
+	run;
+	options source;
 
 
-   Note My Untraedit CLI in User tools is
+	Note My Untraedit CLI in User tools is
 
-   Note -initstmt "%echolog;" does not work when shelling out from ultraedit, bit does
-   wotk from the dos command window?
+	Note -initstmt "%echolog;" does not work when shelling out from ultraedit, bit does
+	wotk from the dos command window?
 
-   cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" &
-   jenner -sysin "C:\jnr\runsas_selection.sas"
-   -print "C:\jnr\current1.lst"
-   -log "C:\jnr\current1.log"
-   -sasautos "C:\otojnr"
-   -autoexec "C:\otojnr\autoexec.sas"
-   -sasuser "C:\etc"
-   -work "D:\wpswrk"
-   -initstmt "%echolog;" > c:\slc\console_output.txt 2>&1	
+	cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" &
+	jenner -sysin "C:\jnr\runsas_selection.sas"
+	-print "C:\jnr\current1.lst"
+	-log "C:\jnr\current1.log"
+	-sasautos "C:\otojnr"
+	-autoexec "C:\otojnr\autoexec.sas"
+	-sasuser "C:\etc"
+	-work "D:\wpswrk"
+	-initstmt "%echolog;" > c:\slc\console_output.txt 2>&1   
 
-   
-	 Workflow four repositories
+	 Workflow repositories
 				 
 	 https://github.com/rogerjdeangelis/utl-chapter-I-configuration-and-ultraedit-setup-for-sas-compatible-systems
 	 https://github.com/rogerjdeangelis/utl-chapter-II-ultraedit-key-mapping-for-sas-compatible-systems
@@ -73,7 +79,7 @@
 	 https://github.com/rogerjdeangelis/jnr-alpha-version-jenner-analytics-windows-binary-calling-python-using-ultraedit-proof-of-concept
 	 https://github.com/rogerjdeangelis/jnr-alpha-version-jenner-analytics-windows-binary-calling-R-using-ultraedit-proof-of-concept
 	 
-	 If you want all the settings used in the github repositories download and ibstall the settings.
+	 If you want all the settings used in the github repositories, download and install the settings.
 	 Advanced > Backup Settings > Restore   
 		
 	 
