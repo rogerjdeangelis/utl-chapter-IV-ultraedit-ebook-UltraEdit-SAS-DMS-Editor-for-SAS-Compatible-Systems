@@ -9,7 +9,7 @@
 	 Too long to post, see
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
 
-     Decided not to use the (basically just press cntrl-a, select all, then ctrl-alt r to run entire program, no need for a separate tool.)
+     Decided not to use 'User tools 1" (basically just press cntrl-a, to select all, then ctrl-alt r to run entire program, no need for a separate tool.)
 	 You need to edit the run_select.js script first, change lines 3 to 5 with:
 	 
 	 var tempProgram = "C:\\jnr\\runsas_selection.sas";
