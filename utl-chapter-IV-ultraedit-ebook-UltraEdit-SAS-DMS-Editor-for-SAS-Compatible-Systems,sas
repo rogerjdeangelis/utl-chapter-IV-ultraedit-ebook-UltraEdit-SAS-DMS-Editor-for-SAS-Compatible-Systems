@@ -9,7 +9,7 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
  Too long to post, see
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
 
-Decided not to use the 'user tools 1' (basically just press cntrl-a, select all, then ctrl-alt r to run entire program, no need for a separate tool.)
+Decided not to use the 'user tools 1' (basically just press cntrl-a, to select all, then ctrl-alt r to run entire program, no need for a separate tool.)
 	 You need to edit the run_select.js script first, change lines 4 to 5 with:
 	
      var logFile = "C:\\jnr\\current.log";
