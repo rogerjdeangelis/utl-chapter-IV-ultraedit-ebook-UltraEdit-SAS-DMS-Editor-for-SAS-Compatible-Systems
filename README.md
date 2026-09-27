@@ -10,7 +10,14 @@
 	 https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
 
      Decided not to use the (basically just press cntrl-a, select all, then ctrl-alt r to run entire program, no need for a separate tool.)
-	    'Run Entire Program, user tools #1' and just open  C:\jnr\current.log, C:\jnr\current.lst, and C:\jnr\current.sas and use the following command to run highlighted code and entire program. To run entire program, just press cntrl-a and then cntrl-alt-r. This runs the entire program without overlaying log and list windows. The open windows are automatically refreshed.
+	 You need to edit the run_select.js script first, change lines 3 to 5 with:
+	 
+	 var tempProgram = "C:\\jnr\\runsas_selection.sas";
+     var logFile = "C:\\jnr\\current.log";
+     var lstFile = "C:\\jnr\\current.lst";
+	 
+     Then edit the cmd
+	 To  'Run Entire Program, user tools #1' and just open  C:\jnr\current.log, C:\jnr\current.lst, and C:\jnr\current.sas and use the following command to run highlighted code and entire program. To run entire program, just press cntrl-a and then cntrl-alt-r. This runs the entire program without overlaying log and list windows. The open windows are automatically refreshed.
 
 	cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\current.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
 	
