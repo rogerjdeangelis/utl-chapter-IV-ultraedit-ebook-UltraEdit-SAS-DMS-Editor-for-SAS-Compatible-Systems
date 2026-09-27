@@ -16,11 +16,11 @@ Decided not to use the 'user tools 1' (basically just press cntrl-a, to select a
      var lstFile = "C:\\jnr\\current.lst";
 	 
      Then edit the cmd
- 'Run Entire Program, user tools #1' and just open  C:\jnr\current.log, C:\jnr\current.lst, and C:\jnr\current.sas and use the following command to run highlighted code and entire program. To run entire program, just press cntrl-a and then cntrl-alt-r. This runs the entire program without overlaying log and list windows. The open windows are automatically refreshed.
+ 'Run Entire Program, user tools #1' and just open  C:\jnr\current.log, C:\jnr\current.lst, and C:\jnr\runsas_selection.sas and use the following command to run highlighted code and entire program. To run entire program, just press cntrl-a and then cntrl-alt-r. This runs the entire program without overlaying log and list windows. The open windows are automatically refreshed.
 cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\current.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
 
 Same with Run hilighted  slc code, just select all to submit entire program
-cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & wps -sysin "C:\jnr\current/sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & wps -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
 
  When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
  If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
