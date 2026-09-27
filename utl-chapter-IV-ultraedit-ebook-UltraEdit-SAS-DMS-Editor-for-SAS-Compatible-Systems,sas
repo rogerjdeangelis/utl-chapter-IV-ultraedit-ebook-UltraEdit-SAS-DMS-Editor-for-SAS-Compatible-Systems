@@ -9,17 +9,13 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
  Too long to post, see
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
 
- Run entire editor program Jenner Analytics
-cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
-Run hilighted text Jenner Analytics
-cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+Decided not to use the (basically just press cntrl-a, select all, then ctrl-alt r to run entire program, no need for a separate tool.)
+ 'Run Entire Program, user tools #1' and just open  C:\jnr\current.log, C:\jnr\current.lst, and C:\jnr\current.sas and use the following command to run highlighted code and entire program. To run entire program, just press cntrl-a and then cntrl-alt-r. This runs the entire program without overlaying log and list windows. The open windows are automatically refreshed.
+cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & jenner -sysin "C:\jnr\current.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
 
-Run entire editor program slc
-cmd /c start /B wps c:/slc/current.sas -sasauto "c:/wpsoto" -log "c:/slc/current.log" -print "c:/slc/current.lst" -work "d:/wpswrk" -sasuser c:\etc -autoexec c:/wpsoto/autoexec.sas > c:\slc\console_output.txt 2>&1
-Run hilighted text slc
-cmd /c "type nul > "C:\jnr\current1.log" & type nul > "C:\jnr\current1.lst"" & wps -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current1.lst" -log "C:\jnr\current1.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
+Same with Run hilighted  slc code, just select all to submit entire program
+cmd /c "type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst"" & wps -sysin "C:\jnr\current/sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "C:\wpsoto" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" -work "D:\wpswrk" > c:\slc\console_output.txt 2>&1
 
- 
  When submitting your SLC or JNR program with Ctrl+Alt+J, make sure your focus is on c:\jnr\current.sas window.
  If the title bar has an asterisk(unsaved program), c:\jnr\current.sas*, press, ctrl+S.
  Also, a save will not be done if the code did not change; this is also true for 'promote to production)
