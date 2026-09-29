@@ -181,8 +181,8 @@
 	 58  Click [COL]      [COL] is the very bootom line in UE
 	 59  Trim Trailing    advanced>settings>filehandling> checj Trim trailing spaces on save
 	 60  Ctr+Alt+B        Toggle [COL] on/off the bottom line of UE
-	  
-	 
+	 61  Ctrl-G           Gog to Line/Column (91/1 line 91 column 1)
+		 
 	 Macros             
 	  1  Ctrl+Alt+E       Reduce mutiple blanks to single blank udes perl expressions.             
 						  Works on mutiple lines with shiftAlt +column mode 
