@@ -120,68 +120,68 @@
 	of code then past ay cursor.
 
 	 Enhanced Key Mappings ( I have reserved Ctrl+Alt+ for user key mappings )
-	 
-	  1  Ctrl+Alt-T       Tile 3 windows lst, sas, log. You can customize further ie docked find                       
-	  2  Ctrl+Shift+1     Jenner Run entire program with Jenner Aalytics (user tool Jnr -no script needed )  
-	  3  Ctrl+Shift+2     Jenner Run Highlighted Code run_selection.js (I use ctrl+Alt+R)
-	  4  Ctrl+Shift+3     WPS Run Entire Program (no script needed - user tool slc) 
-	  5  Ctrl+Shift+4     WPS Run Highlighted code (run_selectioslc.js - I use Alt+Ctrl+4)
-	  6  Ctrl+Alt+2       Save Program using line 2 of program (do not need user tools - advanced all scripts see below) 
-	  7  Ctrl+Alt+L       Clear Log and Lst	((do not need user tools - advanced all scripts see below) 
-	  8  Ctrl+Alt+P       Python Run (run_selectionpy.js)
-	  9  Ctrl+Alt+N       R Run (run_selectionr.js)
-	 10  Ctrl+A Space     Clear any window            
-	 11  Ctrl+S           Save ( chapter II shows how to add versioning)              
-	 12  F12              save as            
-	 13  Cltrl+F          Docked small persistent find box (very usefull)              
-	 14  Alt+F3           Find (note if you have selected text, only that text will be seaarched)            
-	 15  Ctrl+R           find/replace (note if you have selected text, only that text will be seaarched)            
-	 16  Ctrl+G           Go to line                    
-	 17  Ctrl+F5          Convert selected text to lowercase            
-	 18  Alt+F5           Convert selected text to uppercase            
-	 19  Ctrl+Shift+D     Duplcate line            
-	 20  Ctrl+E           Delete Line            
-	 21  Ctrl+Alt+E       Mutiple consecutive spaces to one space            
-	 22  Ctrl+B           Select matching [()] - plase cursor before bracket and ctrl+b             
-	 23  F3               Search Forward(easier than repeated clicls on NEXT in find replace)            
-	 24  Ctrl+F3          Search backward            
-	 25  Ctrl+Home        Cursor at the top of editor (not the top of the visible window)            
-	 26  Ctrl+End         Cursor to the bottom of the editor                
-	 27  ctrl+Shift+End   Delete All lines to end of file in editor                   
-	 28  Ctrl+H           Toggle Hex Mode               
-	 29  Ctrl+\           trim leading spaces works on selected lines or entire text            
-	 30  Ctrl+N           Open an additional editor window            
-	 31  Ctrl+K           Spell Check             
-	 32  Ctrl+shift+F     Find in files            
-	 33  F7               Insert datetime at cursor            
-	 34  F5               Capitalize the first letter of each word            
-	 35  Alt+\            Counts all the words in the entire program                   
-	 36  Ctrl+Q           Quick File Open                  
-	 37  Ctrl+O           Open a File            
-	 38  Ctrl Shift F4    Close all Files Open                                                                     
-	 39  Alt+F12          Save All Open Files                   
-	 40  Ctrl+Shift+P     Command Pallete (had to do it twice)            
-	 41  F1               Help                   
-	 42  F9               Run Dos Command            
-	 43  F10              Run Windows Program                                                                                  
-	 44  CTRL+F11         Trim Leading Spaces            
-	 45  Ctrl+p           Print            
-	 46  Ctrl+M           Play Macro             
-	 47  Alt+F11          Compare files            
-	 48  Ctrl+J           Flow lines (sas TF in prefix area, highlight lines ctrl-J)            
-	 49  box              Create command box using autocomplete               
-	 50  Ctrl+Alt+L       Clear log and list (may have a line of residual text?)               
-	 51  Tab              Tab 4 spaces see below         
-	 52  Ctrl+Alt+C       Center Justify see below         
-	 53  Ctrl+Alt+L       Left Justify see below            
-	 54  Ctrl+Alt+I       Renter Justify see below            
-	 55  Ctrl+Alt+8       Comment out a block of existing code 
-	 56  Ctrl+A then Tab  Shift entire program 4 spaces   
-	 57  View>Ruler       Ruler at top of editor
-	 58  Click [COL]      [COL] is the very bootom line in UE
-	 59  Trim Trailing    advanced>settings>filehandling> checj Trim trailing spaces on save
-	 60  Ctr+Alt+B        Toggle [COL] on/off the bottom line of UE
-	 61  Ctrl-G           Gog to Line/Column (91/1 line 91 column 1)
+	  1  Ctrl+Alt-T        Tile 3 windows lst, sas, log. You can customize further ie docked find
+	  2  Ctrl+A Ctrl+Alt+R Jenner Run entire program with Jenner Aalytics (user tool Jnr -no script needed )
+	  3  Ctrl+Shift+R      Jenner Run Highlighted Code run_selection.js (I use ctrl+Alt+R)
+	  4  Ctrl+Alt+4        WPS Run Entire Program (no script needed - user tool slc)
+	  5  Ctrl+A Ctrl+Alt+4 WPS Run Highlighted code (run_selectioslc.js - I use Alt+Ctrl+4)
+	  6  Ctrl+Alt+2        Save Program using line 2 of program (do not need user tools - advanced all scripts see below)
+	  7  Ctrl+Alt+L        Clear Log and Lst	(do not need user tools - advanced all scripts see below)
+	  8  Ctrl+Alt+P        Python Run (run_selectionpy.js)
+	  9  Ctrl+Alt+N        R Run (run_selectionr.js)
+	 10  Ctrl+A Space      Clear any window
+	 11  Ctrl+A Ctrl+S     Save ( chapter II shows how to add versioning)
+	 12  F12               save as
+	 13  Cltrl+F           Docked small persistent find box (very usefull)
+	 14  Alt+F3            Find (note if you have selected text, only that text will be seaarched)
+	 15  Ctrl+R            find/replace (note if you have selected text, only that text will be seaarched)
+	 16  Ctrl+G            Go to line
+	 17  Ctrl+F5           Convert selected text to lowercase
+	 18  Alt+F5            Convert selected text to uppercas
+	 19  Ctrl+Shift+D      Duplcate line
+	 20  Ctrl+E            Delete Line
+	 21  Ctrl+Alt+E        Mutiple consecutive spaces to one space
+	 22  Ctrl+B            Select matching [()] - plase cursor before bracket and ctrl+b
+	 23  F3                Search Forward(easier than repeated clicls on NEXT in find replace)
+	 24  Ctrl+F3           Search backward
+	 25  Ctrl+Home         Cursor at the top of editor (not the top of the visible window)
+	 26  Ctrl+End          Cursor to the bottom of the editor
+	 27  ctrl+Shift+End    Delete All lines to end of file in editor
+	 28  Ctrl+H            Toggle Hex Mode
+	 29  Ctrl+\            trim leading spaces works on selected lines or entire text
+	 30  Ctrl+N            Open an additional editor window
+	 31  Ctrl+K            Spell Check
+	 32  Ctrl+shift+F      Find in files
+	 33  F7                Insert datetime at cursor
+	 34  F5                Capitalize the first letter of each word
+	 35  Alt+\             Counts all the words in the entire program
+	 36  Ctrl+Q            Quick File Open
+	 37  Ctrl+O            Open a File
+	 38  Ctrl Shift F4     Close all Files Ope
+	 39  Alt+F12           Save All Open Files
+	 40  Ctrl+Shift+P      Command Pallete (had to do it twice)
+	 41  F1                HelpHelp
+	 42  F9                Run Dos Command
+	 43  F10               Run Windows Progra
+	 44  CTRL+F11          Trim Leading Spaces
+	 45  Ctrl+p            PrintPrint
+	 46  Ctrl+M            Play Macro
+	 47  Alt+F11           Compare files
+	 48  Ctrl+J            Flow lines (sas TF in prefix area, highlight lines ctrl-J)
+	 49  box               Create command box using autocomplete
+	 50  Ctrl+Alt+L        Clear log and list (may have a line of residual text?)
+	 51  Tab               Tab 4 spaces see below
+	 52  Ctrl+Alt+C        Center Justify see below
+	 53  Ctrl+Alt+L        Left Justify see below
+	 54  Ctrl+Alt+I        Renter Justify see below
+	 55  Ctrl+Alt+8        Comment out a block of existing code
+	 56  Ctrl+A then Tab   Shift entire program 4 spaces
+	 57  View>Ruler        Ruler at top of editor
+	 58  Click [COL]       [COL] is the very bootom line in UE
+	 59  Trim Trailing     advanced>settings>filehandling> checj Trim trailing spaces on save
+	 60  Ctr+Alt+B         Toggle [COL] on/off the bottom line of UE
+	 61  Ctrl-0            Make sure windows clipboard is active (fix issue if botom line has another clipboard active - Kn NN,Col NNN, C8<-8th clipboard)	 
+
 		 
 	 Macros             
 	  1  Ctrl+Alt+E       Reduce mutiple blanks to single blank udes perl expressions.             
