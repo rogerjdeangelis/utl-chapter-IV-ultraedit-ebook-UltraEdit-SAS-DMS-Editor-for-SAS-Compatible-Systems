@@ -3,8 +3,29 @@ c:/utl/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatibl
 ---*/   
  
  UltraEdit SAS DMS Editor for SAS Compatible Systems 
- 
- UltraEdit Version 2025.1.0.31 64-bit   (ribbon GUI)
+
+NOTE: Jenner v1.5.107 (build v1.5.107+ec04e8abda.20261027T055441Z)
+
+ NOTE: Jenner does not remove the work directory and create a new
+fresh work directory each time you run.
+If you want a fresh directory for each run use the following CLI.
+I suggest you put the following CLI on one line.
+
+Note I removed -work option and substituted set "JENNER_WORK=D:\wpswrk"
+
+cmd /c "set "JENNER_WORK=D:\wpswrk" & type nul
+ > "C:\jnr\current.log" & type nul
+ > "C:\jnr\current.lst" & jenner
+   -sysin "C:\jnr\runsas_selection.sas"
+   -print "C:\jnr\current.lst"
+   -log "C:\jnr\current.log"
+   -sasautos "c:\otojnr"
+   -autoexec "C:\otojnr\autoexec.sas"
+   -sasuser "C:\etc" > "C:\slc\console_output.txt" 2>&1"
+
+Here is what the temporary work will look like
+
+NOTE: Directory to clean = D:\wpswrk\c4ddaa8d-e870-4ae1-923d-efc5bbf63e34
  
  Too long to post, see
  https://github.com/rogerjdeangelis/utl-chapter-IV-ultraedit-ebook-UltraEdit-SAS-DMS-Editor-for-SAS-Compatible-Systems
