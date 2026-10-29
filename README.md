@@ -16,7 +16,7 @@
     One line
     cmd /c "set "JENNER_WORK=D:\wpswrk" & type nul > "C:\jnr\current.log" & type nul > "C:\jnr\current.lst" & jenner -sysin "C:\jnr\runsas_selection.sas" -print "C:\jnr\current.lst" -log "C:\jnr\current.log" -sasautos "c:\otojnr" -autoexec "C:\otojnr\autoexec.sas" -sasuser "C:\etc" > "C:\slc\console_output.txt" 2>&1"
 
-Breakdown
+    Breakdown
     cmd /c "set "JENNER_WORK=D:\wpswrk" & type nul
      > "C:\jnr\current.log" & type nul
      > "C:\jnr\current.lst" & jenner
