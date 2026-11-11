@@ -4,8 +4,14 @@
 	 
 	 UltraEdit SAS DMS Editor for SAS Compatible Systems 
 	 
-	 NOTE: Jenner v1.5.107 (build v1.5.107+ec04e8abda.20261027T055441Z)
+	 NOTE: Jenner v1.5.110 (build v1.5.110+13530c7ccc.20261030T030012Z)
 	 
+	 Removed this from javascript, save_program_in_line_2, updated on github
+     UltraEdit.messageBox(
+       "Saved copy to:\r\n" + targetFile
+      );
+    to eliminate the the popup message when saving.
+
 	 NOTE: Jenner does not remove the work directory and create a new
     fresh work directory each time you run.
     If you want a fresh directory for each run use the following CLI.
