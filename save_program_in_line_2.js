@@ -52,10 +52,6 @@ if (!UltraEdit.activeDocument) {
             UltraEdit.outputWindow.write(
                 "Save command completed: [" + targetFile + "]"
             );
-
-            UltraEdit.messageBox(
-                "Saved copy to:\r\n" + targetFile
-            );
         }
     }
 }
